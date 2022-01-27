@@ -20,6 +20,7 @@ test("renders two <a> elements inside the <nav> element", () => {
 });
 
 test("renders each <a> element with the correct attributes", () => {
+  screen.debug()
   render(<NavBar />);
 
   const home = screen.queryByText(/home/i);
